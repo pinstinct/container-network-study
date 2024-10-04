@@ -5,7 +5,8 @@ run_backgroud_with_echo nsenter --net=/run/netns/netns0 python3 -m http.server -
 run_with_echo sleep 3 
 run_with_echo curl 172.18.0.10:5000
 run_with_echo curl 172.17.0.2:5000
-echo "호스트의 eth0 인터페이스 5000포트에 도착하는 모든 패킷을 172.18.0.10:5000 목적지로 전달해야 한다. 다른 말로 하면, 호스트의 eth0 인터페이스에 컨테이너의 5000포트를 게시해야 한다."
+echo "호스트의 eth0 인터페이스 5000포트에 도착하는 모든 패킷을 172.18.0.10:5000 목적지로 전달해야 한다."
+echo "다른 말로 하면, 호스트의 eth0 인터페이스에 컨테이너의 5000포트를 게시해야 한다."
 
 echo -e "\n# 포트 게시"
 echo "## 외부 트래픽에 대한 포트 게시"

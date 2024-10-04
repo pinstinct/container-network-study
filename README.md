@@ -8,10 +8,10 @@ docker build -t docker-network .
 docker run --privileged --rm -it docker-network /bin/sh
 
 # docker container 내부 
-/project/script # ./1-main-network.sh
-/project/script # ./2-network-namespace.sh
-/project/script # ./3-virtual-ethernet-devices.sh
-/project/script # ./4-second-container.sh
+/project/script # ./01-main-network.sh
+/project/script # ./02-network-namespace.sh
+/project/script # ./03-virtual-ethernet-devices.sh
+/project/script # ./04-second-container.sh
 /project/script # ./11-virtual-network-switch.sh
 /project/script # ./12-ip-routing.sh
 /project/script # ./13-port-publishing.sh
